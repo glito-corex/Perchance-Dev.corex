@@ -1,0 +1,50 @@
+{
+  "name": "perchance",
+  "version": "1.0.0",
+  "description": "App for developing Perchance generators from a desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Corex-Institut",
+  "license": "on my GitHub",
+  "dependencies": {
+     "express": "^5.3.0",
+     "cors": "^2.8.6"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.perchance.dev",
+    "productName": "Perchance-Dev.crxcls",
+    "asar": true,
+    "compression": "maximum",
+
+    "files": [
+      "main.js",
+      "index.js",
+      "micro.js",
+      "preload.js",
+      "ressources/**/*",
+      "package.json"
+    ],
+
+    "win": {
+      "target": "nsis",
+      "icon": "ressources/corex-perchance.ico"
+    },
+
+    "nsis": {
+      "installerIcon": "ressources/corex-perchance.ico",
+      "uninstallerIcon": "ressources/corex-perchance.ico",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}
