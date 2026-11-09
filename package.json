@@ -10,10 +10,6 @@
   "keywords": [],
   "author": "Corex-Institut",
   "license": "on my GitHub",
-  "dependencies": {
-     "express": "^5.3.0",
-     "cors": "^2.8.6"
-  },
   "type": "commonjs",
   "devDependencies": {
     "electron": "^44.2.0",
