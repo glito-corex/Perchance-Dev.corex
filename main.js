@@ -14,9 +14,6 @@ let micro = "";
 //use set point micro for check if micro = true
 try { micro = fs.readFileSync(path.join(__dirname, "micro.js"), "utf8"); } catch { }
 
-//start server.js
-//require('./core/bridge/server.js');
-
 //Check if the file exists.
 if (fs.existsSync(file)) {
     //set entry point to the file
