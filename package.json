@@ -1,6 +1,6 @@
 {
   "name": "perchance",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "App for developing Perchance generators from a desktop application",
   "main": "main.js",
   "scripts": {
