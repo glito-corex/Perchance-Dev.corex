@@ -13,7 +13,26 @@
 
 function rmv() {
     if (document.body) {
+        const wrappcorexappdevperchance = document.querySelector('.content-wrapper');
+
+        if (wrappcorexappdevperchance) {
+            wrappcorexappdevperchance.style.position = 'absolute';
+            wrappcorexappdevperchance.style.top = '0%';
+            wrappcorexappdevperchance.style.left = '50%';
+            wrappcorexappdevperchance.style.transform = 'translate(-50%, 50%)';
+            wrappcorexappdevperchance.style.width = '700px', 'important';
+        }
+
         const observer = new MutationObserver(function () {
+            const wrappcorexappdevperchance = document.querySelector('.content-wrapper');
+
+            if (wrappcorexappdevperchance) {
+                wrappcorexappdevperchance.style.position = 'absolute';
+                wrappcorexappdevperchance.style.top = '0%';
+                wrappcorexappdevperchance.style.left = '50%';
+                wrappcorexappdevperchance.style.transform = 'translate(-50%, 50%)';
+                wrappcorexappdevperchance.style.width = '700px';
+            }
         });
 
         //set the observe
